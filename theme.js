@@ -3,13 +3,28 @@
     var root = document.documentElement;
     var buttons;
 
+    function getLabels() {
+        var isSwedish = (root.lang || "").toLowerCase().indexOf("sv") === 0;
+        if (isSwedish) {
+            return {
+                light: "Byt till ljust läge",
+                dark: "Byt till mörkt läge"
+            };
+        }
+        return {
+            light: "Switch to light mode",
+            dark: "Switch to dark mode"
+        };
+    }
+
     function applyTheme(theme) {
         root.setAttribute("data-theme", theme);
         if (!buttons) {
             buttons = document.querySelectorAll("[data-theme-toggle]");
         }
+        var labels = getLabels();
         buttons.forEach(function (button) {
-            button.textContent = theme === "dark" ? "Switch to light mode" : "Switch to dark mode";
+            button.textContent = theme === "dark" ? labels.light : labels.dark;
             button.setAttribute("aria-label", button.textContent);
         });
     }

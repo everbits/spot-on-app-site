@@ -10,64 +10,66 @@
     />
     <link rel="stylesheet" href="/styles.css"/>
   <script src="/theme.js" defer></script>
+  <script src="/support-language.js" defer></script>
 </head>
 <body>
 <main class="shell">
   <div class="topbar">
-    <button class="subtle-link theme-toggle" data-theme-toggle type="button">Switch theme</button>
+    <button class="subtle-link theme-toggle" data-theme-toggle data-i18n="themeButton" type="button">Switch theme
+    </button>
   </div>
   <section class="panel hero-panel">
-    <p class="eyebrow">SpotOn support</p>
-    <h1>Need help with SpotOn?</h1>
-        <p class="lede">
+    <p class="eyebrow" data-i18n="eyebrowHero">SpotOn support</p>
+    <h1 data-i18n="heroTitle">Need help with SpotOn?</h1>
+    <p class="lede" data-i18n="heroLede">
           If you are having trouble with the app, have a billing question, or
           want to report a bug, contact us and we will help as quickly as we can.
         </p>
 
         <div class="actions">
-          <a class="button" href="mailto:spoton@everbit.se">Email support</a>
-          <a class="subtle-link" href="/privacy/">Read privacy policy</a>
+          <a class="button" href="mailto:spoton@everbit.se" data-i18n="emailSupport">Email support</a>
+          <a class="subtle-link" href="/privacy/" data-i18n="readPrivacy">Read privacy policy</a>
         </div>
 
         <div class="card-grid">
           <article class="info-card gradient-card">
-            <span class="label">Contact</span>
+            <span class="label" data-i18n="contactLabel">Contact</span>
             <strong>spoton@everbit.se</strong>
-            <p class="muted">
+            <p class="muted" data-i18n="contactBody">
               The best way to reach the SpotOn team for account, billing, and app issues.
             </p>
           </article>
 
           <article class="info-card soft-card">
-            <span class="label">Response time</span>
-            <strong>Usually within 1-2 business days</strong>
-            <p class="muted">We are a small team, but we do read every support request.</p>
+            <span class="label" data-i18n="responseLabel">Response time</span>
+            <strong data-i18n="responseValue">Usually within 1-2 business days</strong>
+            <p class="muted" data-i18n="responseBody">We are a small team, but we do read every support request.</p>
           </article>
         </div>
   </section>
 
   <section class="grid">
     <article class="panel section-panel">
-          <p class="eyebrow">Common issues</p>
-          <h2>What we can help with</h2>
+      <p class="eyebrow" data-i18n="issuesEyebrow">Common issues</p>
+      <h2 data-i18n="issuesTitle">What we can help with</h2>
           <div class="stack">
             <div>
-              <h3>Subscription and billing questions</h3>
-              <p class="muted">
+              <h3 data-i18n="issueBillingTitle">Subscription and billing questions</h3>
+              <p class="muted" data-i18n="issueBillingBody">
                 Contact us about subscriptions, renewals, cancellations, refunds, or purchase
                 problems.
               </p>
             </div>
             <div>
-              <h3>App issues and bug reports</h3>
-              <p class="muted">
+              <h3 data-i18n="issueBugTitle">App issues and bug reports</h3>
+              <p class="muted" data-i18n="issueBugBody">
                 If something is not working as expected, send us the details and we will
                 investigate.
               </p>
             </div>
             <div>
-              <h3>Account access and feature questions</h3>
-              <p class="muted">
+              <h3 data-i18n="issueAccountTitle">Account access and feature questions</h3>
+              <p class="muted" data-i18n="issueAccountBody">
                 Reach out if you need help accessing your account or want clarification on how a
                 feature works.
               </p>
@@ -76,28 +78,28 @@
         </article>
 
     <aside class="panel section-panel">
-          <p class="eyebrow">Before you email</p>
-          <h2>What to include</h2>
+      <p class="eyebrow" data-i18n="beforeEyebrow">Before you email</p>
+      <h2 data-i18n="beforeTitle">What to include</h2>
           <ul class="link-list">
             <li>
-              <span>Device details</span>
-              <span>Model and OS version</span>
+              <span data-i18n="deviceLabel">Device details</span>
+              <span data-i18n="deviceValue">Model and OS version</span>
             </li>
             <li>
-              <span>App version</span>
-              <span>The version you are using</span>
+              <span data-i18n="appVersionLabel">App version</span>
+              <span data-i18n="appVersionValue">The version you are using</span>
             </li>
             <li>
-              <span>Problem summary</span>
-              <span>What happened and what you expected</span>
+              <span data-i18n="summaryLabel">Problem summary</span>
+              <span data-i18n="summaryValue">What happened and what you expected</span>
             </li>
             <li>
-              <span>Screenshots</span>
-              <span>Helpful if something looks wrong</span>
+              <span data-i18n="screenshotsLabel">Screenshots</span>
+              <span data-i18n="screenshotsValue">Helpful if something looks wrong</span>
             </li>
             <li>
-              <span>Steps to reproduce</span>
-              <span>If the problem happens more than once</span>
+              <span data-i18n="stepsLabel">Steps to reproduce</span>
+              <span data-i18n="stepsValue">If the problem happens more than once</span>
             </li>
           </ul>
         </aside>
@@ -105,38 +107,38 @@
 
   <section class="grid">
     <article class="panel section-panel">
-      <p class="eyebrow">Contact support</p>
-      <h2>How to reach us</h2>
+      <p class="eyebrow" data-i18n="contactEyebrow">Contact support</p>
+      <h2 data-i18n="contactTitle">How to reach us</h2>
       <div class="stack">
         <div>
-          <h3>Email</h3>
+          <h3 data-i18n="emailTitle">Email</h3>
           <p class="muted">
-            Send support requests to <a href="mailto:spoton@everbit.se">spoton@everbit.se</a>.
+            <span data-i18n="emailBody">Send support requests to</span> <a href="mailto:spoton@everbit.se">spoton@everbit.se</a>.
           </p>
         </div>
         <div>
-          <h3>Best for</h3>
-          <p class="muted">
+          <h3 data-i18n="bestForTitle">Best for</h3>
+          <p class="muted" data-i18n="bestForBody">
             Billing questions, account help, bug reports, and general product support.
           </p>
         </div>
         <div>
-          <h3>Operated by</h3>
-          <p class="muted">SpotOn support is provided by Everbit AB.</p>
+          <h3 data-i18n="operatedByTitle">Operated by</h3>
+          <p class="muted" data-i18n="operatedByBody">SpotOn support is provided by Everbit AB.</p>
         </div>
       </div>
     </article>
 
     <aside class="panel section-panel">
-      <p class="eyebrow">Related</p>
-      <h2>Useful links</h2>
+      <p class="eyebrow" data-i18n="relatedEyebrow">Related</p>
+      <h2 data-i18n="relatedTitle">Useful links</h2>
       <ul class="link-list">
         <li>
-          <span>Privacy policy</span>
+          <span data-i18n="privacyLabel">Privacy policy</span>
           <a href="/privacy/">/privacy/</a>
         </li>
         <li>
-          <span>Support email</span>
+          <span data-i18n="supportEmailLabel">Support email</span>
           <a href="mailto:spoton@everbit.se">spoton@everbit.se</a>
         </li>
       </ul>
