@@ -9,10 +9,14 @@
             content="Support contact details and help information for the SpotOn app."
     />
     <link rel="stylesheet" href="/styles.css"/>
+  <script src="/theme.js" defer></script>
 </head>
 <body>
 <main class="shell">
-  <section class="panel">
+  <div class="topbar">
+    <button class="subtle-link theme-toggle" data-theme-toggle type="button">Switch theme</button>
+  </div>
+  <section class="panel hero-panel">
     <p class="eyebrow">SpotOn support</p>
     <h1>Need help with SpotOn?</h1>
         <p class="lede">
@@ -26,7 +30,7 @@
         </div>
 
         <div class="card-grid">
-          <article class="info-card accent-card">
+          <article class="info-card gradient-card">
             <span class="label">Contact</span>
             <strong>spoton@everbit.se</strong>
             <p class="muted">
@@ -34,7 +38,7 @@
             </p>
           </article>
 
-          <article class="info-card">
+          <article class="info-card soft-card">
             <span class="label">Response time</span>
             <strong>Usually within 1-2 business days</strong>
             <p class="muted">We are a small team, but we do read every support request.</p>
@@ -43,7 +47,7 @@
   </section>
 
   <section class="grid">
-        <article class="panel">
+    <article class="panel section-panel">
           <p class="eyebrow">Common issues</p>
           <h2>What we can help with</h2>
           <div class="stack">
@@ -71,7 +75,7 @@
           </div>
         </article>
 
-        <aside class="panel">
+    <aside class="panel section-panel">
           <p class="eyebrow">Before you email</p>
           <h2>What to include</h2>
           <ul class="link-list">
@@ -100,7 +104,7 @@
   </section>
 
   <section class="grid">
-    <article class="panel">
+    <article class="panel section-panel">
       <p class="eyebrow">Contact support</p>
       <h2>How to reach us</h2>
       <div class="stack">
@@ -123,7 +127,7 @@
       </div>
     </article>
 
-    <aside class="panel">
+    <aside class="panel section-panel">
       <p class="eyebrow">Related</p>
       <h2>Useful links</h2>
       <ul class="link-list">
